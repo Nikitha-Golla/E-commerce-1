@@ -1,0 +1,100 @@
+/* Basic reset and layout styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    background-image:url(image/image.png);
+}
+
+/* Main content area should grow and push footer to the bottom */
+main {
+    flex: 1;
+}
+
+header {
+    background: #1a73b2;
+    color: #fff;
+    padding: 1rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #1a1313;
+    text-decoration: none;
+}
+
+.hero {
+    background: url('images/hero.jpg') no-repeat center center/cover;
+    color: #050303;
+    text-align: center;
+    padding: 5rem 1rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    background: #e74c3c;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #c0392b;
+}
+
+.featured-products, .products {
+    padding: 2rem;
+    text-align: center;
+}
+
+.product-card {
+    display: inline-block;
+    width: 200px;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background: #1a73b2;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    /* No need for margin-top: auto here; it's controlled by flexbox layout */
+}
